@@ -21,11 +21,17 @@ jobs:
           python-version: "3.10"
       - name: Install Python Dependency
         run: pip3 install requests
-      - name: Run static.py  # 前面都是在安裝 Python 環境，這裡才是真的去執行 crawler.py 的程式
+      - name: Install Python Dependency
+        run: pip3 install BeautifulSoup
+      - name: Install Python Dependency
+        run: pip3 install pandas
+      - name: Run static.py  
         run: python static.py
+      - name: Run api.py 
+        run: python api.py
       - name: Commit Data Back To GitHub Repo  # 將爬到的數據 commit 回 GitHub repo
         run: |
           git config --global user.name "s1090749"
           git config --global user.email "s1090749@mail.yzu.edu.tw"
-          git add . && git commit -m "daily crawl"
+          git add . && git commit -m "daily python"
           git push origin main
