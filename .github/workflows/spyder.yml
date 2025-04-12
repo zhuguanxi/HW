@@ -33,7 +33,7 @@ jobs:
         
       - name: Commit Data Back To GitHub Repo  # 將爬到的數據 commit 回 GitHub repo
         run: |
-          git config --global user.name "s1090749"
-          git config --global user.email "s1090749@mail.yzu.edu.tw"
+          git config --global user.name "zhuguanxi"
+          git config --global user.email "zhuguanxi@gmail.com"
           git add . && git commit -m "daily python"
           git push origin main
