@@ -21,7 +21,7 @@ jobs:
       - name: Install Python Dependency
         run: pip3 install requests
       - name: Run crawler.py  # 前面都是在安裝 Python 環境，這裡才是真的去執行 crawler.py 的程式
-        run: python crawler.py
+        run: python static.py
       - name: Commit Data Back To GitHub Repo  # 將爬到的數據 commit 回 GitHub repo
         run: |
           git config --global user.name "s1090749"
