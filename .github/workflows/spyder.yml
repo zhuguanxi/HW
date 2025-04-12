@@ -8,6 +8,9 @@ on:
       '*'
   workflow_dispatch:  # 可以手動執行此 action
 
+permissions:
+  contents:write
+
 # 預先定義此 action 要幹嘛
 jobs:
   crawler-demo:
