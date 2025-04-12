@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import sys
 
 # 設定API金鑰
 API_KEY = 'A0V288MZ5ODXY44J'
@@ -56,9 +57,9 @@ def get_historical_stock_data(stock_symbol, start_date, end_date, output_file='a
 
 # 主程式
 def main():
-    stock_symbol = input("請輸入股票代號：")
-    start_date = input("請輸入開始日期（格式：YYYY-MM-DD）：")
-    end_date = input("請輸入結束日期（格式：YYYY-MM-DD）：")
+    stock_symbol = sys.argv[1]
+    start_date = sys.argv[2]
+    end_date = sys.argv[3]
 
     get_historical_stock_data(stock_symbol, start_date, end_date)
 
