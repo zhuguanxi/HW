@@ -29,7 +29,7 @@ jobs:
         run: python static.py
         
       - name: Run api.py 
-        run: python api.p AAPL 2025-04-01 2025-04-11
+        run: python api.py AAPL 2025-04-01 2025-04-11
         
       - name: Commit Data Back To GitHub Repo  # 將爬到的數據 commit 回 GitHub repo
         run: |
