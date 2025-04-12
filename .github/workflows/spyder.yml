@@ -22,7 +22,7 @@ jobs:
       - name: Install Python Dependency
         run: pip3 install requests
       - name: Install Python Dependency
-        run: pip3 install BeautifulSoup
+        run: pip3 install BeautifulSoup4
       - name: Install Python Dependency
         run: pip3 install pandas
       - name: Run static.py  
