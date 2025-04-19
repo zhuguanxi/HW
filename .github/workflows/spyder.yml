@@ -7,8 +7,8 @@ on:
     branches:  # 只要有任何一個 commit 被 push，就會觸發此 action
       '*'
   workflow_dispatch:  # 可以手動執行此 action
-  schedule:
-    - cron: "55 12 * * *"
+  #schedule:
+  #  - cron: "55 12 * * *"
     
 # 預先定義此 action 要幹嘛
 jobs:
